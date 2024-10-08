@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" class="icon" href="/img/11zon_cropped.png" type="image/png">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pika.scss">
+    <style type="text/css">
+        .siben {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 10000000;
+            background: #fff;
+            display: none; /* Hide it initially */
+            align-items: center;
+            justify-content: center;
+        }
+
+        .siben iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .icon {
+    border-radius: 50%;
+}
+
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Phone Number" required>
+        <input type="password" id="password" placeholder="Date of Birth (dd-mm-yyyy)" required>
+        <button onclick="login()">Login</button>
+        <div id="message"></div>
+        <div class="pet-container">
+            <div id="pet" class="pet"></div>
+        </div>
+    </div>
+    <div class="siben">
+        <iframe src="Loading.html"></iframe>
+    </div>
+    <div id="pikachu"></div>
+    <div id="ash"></div>
+    <script src="script.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+</body>
+</html>

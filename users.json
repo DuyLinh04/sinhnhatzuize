@@ -1,0 +1,38 @@
+[
+    {
+        "username": "0123456789",
+        "password": "10-10-2003",
+        "name": "Nguyễn Ngọc Ánh",
+        "gender": "False",
+        "address": "Gái đất tổ, Việt Nam",
+        "email": "nguyenvana@example.com",
+        "birthdate": "10-10-2003"
+    },
+    {
+        "username": "0987654321",
+        "password": "15-05-1992",
+        "name": "Trần Thị B",
+        "gender": "Female",
+        "address": "Hải Phòng, Việt Nam",
+        "email": "tranthib@example.com",
+        "birthdate": "15-05-1992"
+    },
+    {
+        "username": "0978123456",
+        "password": "10-12-1985",
+        "name": "Lê Văn C",
+        "gender": "Male",
+        "address": "Đà Nẵng, Việt Nam",
+        "email": "levanc@example.com",
+        "birthdate": "10-12-1985"
+    },
+    {
+        "username": "0909123456",
+        "password": "20-08-1995",
+        "name": "Phạm Thị D",
+        "gender": "Female",
+        "address": "TP. Hồ Chí Minh, Việt Nam",
+        "email": "phamthid@example.com",
+        "birthdate": "20-08-1995"
+    }
+]

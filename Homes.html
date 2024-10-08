@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy BirthDay Ánh</title>
+    <link rel="stylesheet" href="Homes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Bạn cóa muốn ước điều gì khum!</h1> 
+        <button class="wish-button" onclick="makeAWish()">Hãy ước một điều</button>
+
+        <div class="wish-image" id="wishImage">
+            <img src="img/cau-truc-wish-1-1.jpg" alt="Happy Image">
+        </div>
+        <div class="wish-note" id="wishNote">
+            <textarea placeholder="Hãy viết điều ước của bạn tại đây..."></textarea>
+            <button onclick="submitWish()" class="wish-button">Gửi điều ước!</button>
+        </div>
+    </div>
+    
+    <audio id="birthdaySong" src="path_to_your_birthday_song.mp3" autoplay loop></audio>
+    
+    <script src="Homes.js"></script>
+    <script src="HomesButton.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+</body>
+</html>
