@@ -15,7 +15,7 @@ body, html {
     text-align: center;
     color: #fff;
     z-index: 2;
-    backdrop-filter: blur(5px); /* For slight background blur */
+    backdrop-filter: blur(5px);
     padding: 20px;
     border: 2px solid transparent;
     border-radius: 20px;
@@ -127,6 +127,89 @@ h1 {
     background: linear-gradient(135deg, #66BB6A, #81C784);
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+
+    .wish-button {
+        padding: 12px 24px;
+        font-size: 1rem;
+        border-radius: 20px;
+    }
+
+    .wish-message {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .wish-image {
+        width: 250px;
+        height: auto;
+    }
+
+    .wish-note {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+    .wish-note textarea {
+        height: 80px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .wish-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+        border-radius: 15px;
+    }
+
+    .wish-message {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .wish-image {
+        width: 200px;
+        height: auto;
+    }
+
+    .wish-note {
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+
+    .wish-note textarea {
+        height: 60px;
+        font-size: 0.8rem;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
+
+/* Animation for fading in */
 @keyframes fadeIn {
     from {
         opacity: 0;

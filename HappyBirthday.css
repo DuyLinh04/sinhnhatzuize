@@ -322,3 +322,96 @@ h4 {
 .text-right {
 	text-align: right;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #QDK {
+    width: 80px;
+  }
+
+  #QDK:hover {
+    width: 200px;
+  }
+
+  .velas {
+    width: 3px;
+    height: 30px;
+  }
+
+  .fuego {
+    width: 5px;
+    height: 15px;
+  }
+
+  .card {
+    width: 90%;
+    right: 5px;
+    top: 55%;
+    transform: translateY(-50%) perspective(1500px);
+  }
+
+  .card:hover {
+    transform: translateY(-50%) perspective(1500px) rotate(10deg) scale(1.1);
+  }
+
+  .text h1 {
+    font-size: 1.2em;
+  }
+
+  .text p {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  #QDK {
+    width: 60px;
+  }
+
+  #QDK:hover {
+    width: 150px;
+  }
+
+  .velas {
+    width: 2px;
+    height: 25px;
+  }
+
+  .fuego {
+    width: 4px;
+    height: 10px;
+  }
+
+  .card {
+    width: 95%;
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%) perspective(1000px);
+  }
+
+  .card:hover {
+    transform: translateY(-50%) perspective(1000px) rotate(5deg) scale(1.05);
+  }
+
+  .text h1 {
+    font-size: 1em;
+  }
+
+  .text p {
+    font-size: 0.8em;
+  }
+}
+
+@media (min-width: 1024px) {
+  #QDK {
+    width: 150px;
+  }
+
+  .card {
+    width: 300px;
+    height: 400px;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%) perspective(2000px);
+  }
+}

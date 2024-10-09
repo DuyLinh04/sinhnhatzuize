@@ -481,5 +481,58 @@
     left: 50%;
   }
 
+  /* Responsive Design */
+@media (max-width: 1024px) {
+  .box {
+      width: 250px;
+      height: 250px;
+  }
+
+  .pikachu {
+      transform: scale(0.8); /* Giảm kích thước Pikachu */
+  }
+
+  .content {
+      padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .box {
+      width: 200px;
+      height: 200px;
+  }
+
+  .face {
+      border: 1px solid #bbb;
+  }
+
+  .pikachu {
+      transform: scale(0.6);
+  }
+
+  .content {
+      padding: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .box {
+      width: 150px;
+      height: 150px;
+  }
+
+  .pikachu {
+      transform: scale(0.5);
+  }
+
+  .content {
+      padding: 2px;
+  }
+
+  .face {
+      background: #dcdcdc; /* Tối màu hơn một chút để dễ nhìn hơn */
+  }
+}
 
   
