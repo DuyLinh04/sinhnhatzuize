@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: url('/img/z5904798815488_d40086364be0e0433d7f3abe4f3e7ffc.jpg') no-repeat center center fixed;
+    background: url('/NgocAnhs/img/z5904798815488_d40086364be0e0433d7f3abe4f3e7ffc.jpg') no-repeat center center fixed;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -100,7 +100,7 @@ button:hover {
 .pet {
     width: 32px;
     height: 32px;
-    background: url('/img/cat_dog_preview_dog_white_walk.gif') left center;
+    background: url('/NgocAnhs//img/cat_dog_preview_dog_white_walk.gif') left center;
     background-size: cover;
     position: absolute;
     bottom: 0;
