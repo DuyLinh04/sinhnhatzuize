@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy BirthDay Ánh🎁</title>
+    <link rel="icon" class="icon" href="/img/11zon_cropped.png" type="image/png">
     <link rel="stylesheet" href="Hello.css">
     
 </head>
 <body>
-    <div class="box">
-        <div class="face bottom"></div>
+  <div id="notification" class="notification">Nhấn giữ vào nắp 3s nhen</div>
+
+    <div class="box" aria-placeholder="hãy giữ vào nắp hộp 4s">
+        <div class="face bottom" aria-placeholder="hãy giữ vào nắp hộp 4s"></div>
         <div class="face back"></div>
         <div class="face right"></div>
         <div class="face left">
-          <div class="icons">
-            <div class="umbrella"></div>
-          <div class="orientation">
+          <div class="icons" aria-placeholder="hãy giữ vào nắp hộp 4s">
+            <div class="umbrella" aria-placeholder="hãy giữ vào nắp hộp 4s"></div>
+          <div class="orientation" aria-placeholder="hãy giữ vào nắp hộp 4s">
             <div class="base"></div>
           </div>
           <div class="glass"></div>
@@ -36,42 +39,54 @@
           <div class="cover-left"></div>
           <div class="cover-front"></div>
         </div>
-        <div class="content">
-        <div class="pikachu">
-          <div class="ear left"></div>
-          <div class="ear"></div>
-          <div class="head">
-            <div class="eye"></div>
-            <div class="eye"></div>
+        <div class="content" aria-placeholder="hãy giữ vào nắp hộp 4s">
+        <div class="pikachu" aria-placeholder="hãy giữ vào nắp hộp 4s">
+          <div class="ear left" aria-placeholder="hãy giữ vào nắp hộp 4s"></div>
+          <div class="ear" aria-placeholder="hãy giữ vào nắp hộp 4s"></div>
+          <div class="head" aria-placeholder="hãy giữ vào nắp hộp 4s">
+            <div class="eye" aria-placeholder="hãy giữ vào nắp hộp 4s"></div>
+            <div class="eye" aria-placeholder="hãy giữ vào nắp hộp 4s"></div>
             <div class="nouse"></div>
             <div class="mouth"></div>
           </div>
         </div>
       </div>
 
-      
+     
 
       <script>
-        let mouseDownTimer;
-        let heldForFiveSeconds = false;
-    
-        // Bắt sự kiện khi nhấn giữ chuột vào bất kỳ đâu trên trang
-        document.body.addEventListener('mousedown', function () {
-            // Bắt đầu đếm thời gian 5 giây khi nhấn giữ chuột
-            mouseDownTimer = setTimeout(function () {
-                heldForFiveSeconds = true; // Đánh dấu rằng người dùng đã giữ đủ 5 giây
-            }, 2000); // 5000 milliseconds = 3 giây
-        });
-    
-        // Bắt sự kiện khi nhả chuột
-        document.body.addEventListener('mouseup', function () {
-            clearTimeout(mouseDownTimer); // Hủy bộ đếm thời gian
-            if (heldForFiveSeconds) {
-                // Nếu người dùng đã giữ đủ 5 giây, chuyển hướng đến trang HappyBirthday.html
-                window.location.href = 'HappyBirthday.html';
-            }
-            heldForFiveSeconds = false; // Đặt lại trạng thái cho lần tiếp theo
-        });
+     document.addEventListener('DOMContentLoaded', function () {
+    const notification = document.getElementById('notification');
+
+    // Hiển thị thông báo
+    notification.style.opacity = '1'; // Hiển thị thông báo
+    setTimeout(function () {
+        notification.style.opacity = '0'; // Ẩn thông báo sau 3 giây
+    }, 3000);
+
+    let mouseDownTimer;
+    let heldForFiveSeconds = false;
+
+    // Bắt sự kiện khi nhấn giữ chuột vào bất kỳ đâu trên trang
+    document.body.addEventListener('mousedown', function () {
+        // Bắt đầu đếm thời gian 2 giây khi nhấn giữ chuột
+        mouseDownTimer = setTimeout(function () {
+            heldForFiveSeconds = true; // Đánh dấu rằng người dùng đã giữ đủ 2 giây
+        }, 2000); // 2000 milliseconds = 2 giây
+    });
+
+    // Bắt sự kiện khi nhả chuột
+    document.body.addEventListener('mouseup', function () {
+        clearTimeout(mouseDownTimer); // Hủy bộ đếm thời gian
+        if (heldForFiveSeconds) {
+            // Nếu người dùng đã giữ đủ 2 giây, chuyển hướng đến trang HappyBirthday.html
+            window.location.href = 'HappyBirthday.html';
+        }
+        heldForFiveSeconds = false; // Đặt lại trạng thái cho lần tiếp theo
+    });
+});
+
+
     </script>
     
 

@@ -7,7 +7,7 @@ function login() {
 
     // Giả lập quá trình đăng nhập với thời gian 5 giây
     setTimeout(() => {
-        if (username === '0123456789' && password === '10-10-2003') {
+        if (username === '0981423922' && password === '11-10-2003') {
             document.getElementById('message').innerText = 'Login successful!';
             // Chuyển hướng đến trang HappyBirthday.html sau khi đăng nhập thành công
             window.location.href = 'Hello.html';

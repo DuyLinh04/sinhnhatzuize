@@ -19,6 +19,40 @@
     transform:rotatex(345deg) rotateY(216deg);
     z-index: 0;
   }
+ 
+
+  @keyframes glow {
+    0%, 100% {
+        text-shadow: 0 0 10px #ff80ab, 0 0 20px #ff4081, 0 0 30px #ff4081, 0 0 40px #ff4081;
+    }
+    50% {
+        text-shadow: 0 0 20px #ff4081, 0 0 30px #ff80ab, 0 0 40px #ff80ab, 0 0 50px #ff80ab;
+    }
+}
+
+.notification {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: 10000;
+    font-size: 1.2rem;
+    animation: glow 2s infinite alternate; /* Hiệu ứng nhấp nháy */
+    font-family: 'Pacifico', cursive; /* Font chữ mềm mại */
+}
+
+
+
+
+
   .face{
     position: absolute;
     height: 100%;
@@ -301,6 +335,7 @@
     position: absolute;
     right: 3px;
     top: 3px;
+    place-content: hãy giữ nắp hộp 4s;
   }
   .label::after{
     height: 15px;

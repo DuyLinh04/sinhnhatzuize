@@ -1,0 +1,96 @@
+
+  
+  #contentContainer, #carouselContainer {
+    background: transparent; /* Nền trong suốt cho các phần tử bên trong */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carouselItemInner img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Hiệu ứng đổ bóng cho ảnh */
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1)); /* Gradient nhẹ phủ lên ảnh */
+  }
+  
+  .carouselItemInner {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.1)); /* Gradient nền nhẹ cho khung */
+    border: 10px solid rgba(255, 255, 255, 0.2); /* Bo viền trong suốt */
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4); /* Hiệu ứng đổ bóng cho khung */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carouselItem {
+    width: 320px;
+    height: 180px;
+    position: absolute;
+    visibility: hidden;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .trans3d {
+    transform-style: preserve-3d;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .wish-message {
+    font-family: 'Pacifico', cursive; /* Font chữ mềm mại */
+    font-size: 32px; /* Kích thước chữ lớn hơn để nổi bật */
+    color: #FFD700; /* Màu vàng nhạt hợp với nền */
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 215, 0.2)); /* Gradient nhẹ */
+    padding: 20px 40px; /* Tạo khoảng đệm xung quanh */
+    border-radius: 15px; /* Bo góc để trông mềm mại hơn */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Hiệu ứng đổ bóng */
+    text-align: center;
+    max-width: 80%;
+    margin: 20px auto;
+    opacity: 0;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Hiệu ứng xuất hiện mượt mà */
+    transform: translateY(20px);
+  }
+  
+  .wish-message.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .star {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    animation: floatStars 5s infinite ease-in-out;
+    opacity: 0.6;
+  }
+  
+  @keyframes floatStars {
+    0% {
+      transform: translateY(0px);
+      opacity: 0.8;
+    }
+    50% {
+      transform: translateY(-20px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 0.8;
+    }
+  }
+  
